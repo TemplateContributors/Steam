@@ -1,13 +1,12 @@
-
 .headerNavbar {
     background-color: $header-color;
     height: 60pt;
-    >img{
+    > img {
         margin-bottom: 15pt;
     }
     .ul-dropdown {
         transition: opacity 0.3s;
-        display: flex;        
+        display: flex;
         > li {
             color: $ulHeaderNavbar !important;
             padding: 5pt;
@@ -29,13 +28,13 @@
                     top: 20pt;
                     font-weight: normal;
                     font-size: 10pt;
-                    overflow: hidden;
                     width: 110pt;
                     flex-direction: column;
                     border-radius: 1pt;
                     align-items: flex-start;
                     padding-left: 0pt;
-                    
+                    z-index: 5;
+                    overflow: hidden;
                 }
             }
         }
@@ -65,51 +64,95 @@
         }
     }
 }
-.sideBar{
+.sideBar {
     background-color: blue;
     height: 100vh;
 }
-.mainDiv{
+.mainDiv {
     display: flex;
 }
-.emptyBar{
+.emptyBar {
     background-color: blue;
-    height: 100vh;  
+    height: 100vh;
 }
-.middlePage{
+.middlePage {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    .middleNavBar{
+    z-index: 1;
+    .middleNavBar {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
         margin-top: 20pt;
         height: 30pt;
-        background-image: linear-gradient(to right,#3B6490,#2E6096,#0F216E);
-        overflow: hidden;
-        .ulMiddleNavBar{
+        position: relative;
+        background-image: linear-gradient(to right, #3b6490, #2e6096, #0f216e);
+        .ulMiddleNavBar {
             display: flex;
             flex-direction: row;
-            align-items: center;
             flex-wrap: nowrap;
-            padding-left: 1pt;
-            >li{
-                padding: 20pt 10pt 6pt 10pt;
+            padding-left: 0pt;
+            background-color: yellow;
+            > li {
                 color: white;
+                flex-grow: 4;
                 font-weight: bold;
                 font-size: 10pt;
                 text-shadow: 1pt 1pt rgb(93, 93, 93);
-                &:hover{
+                position: relative;
+
+                &:hover {
                     cursor: pointer;
-                    background-image: linear-gradient(to right,#307FBF,transparent);
+                    background-image: linear-gradient(to right, #307fbf, transparent);
+
+                }
+                .dropdownMiddleNavBar {
+                    display: none;
+                }
+            }
+            > li:nth-child(1):hover {
+                .dropdownMiddleNavBar {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 29pt;
+                    left: 0pt;
+                    background-image: $dropdownHeaderNavbar;
+                    animation-name: topbardropdown;
+                    animation-duration: 0.8s;
+                    animation-fill-mode: forwards;
+                    width: 150pt;
+                    box-shadow: -1px -1px 15px 1px black;
+                    cursor: initial;
+                    li {
+                        
+                        display: inline-block;
+                        font-size: 9pt;
+                        color: $lightWhiteHeaderNavbar;
+                        font-weight: bold;
+                        padding-left: 0;
+                    }
+                    li:hover {
+                        text-decoration: underline;
+                        color: white;
+                        cursor: pointer;
+                    }
                 }
             }
         }
-        .input-group{
-            background-color: #316282;
+        .input-group {
             margin-right: 6pt;
+            width: 150pt;
+            position: absolute;
+            right: 0pt;
+            > input {
+                background-color: #316282 !important;
+                &:hover {
+                    border-color: #307fbf;
+                }
+            }
         }
     }
 }
