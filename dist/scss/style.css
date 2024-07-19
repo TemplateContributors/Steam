@@ -1,0 +1,42 @@
+@font-face {
+  font-family: motiva;
+  src: url(), local(motiva sans);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.headerNavbar {
+  background-color: rgb(23, 29, 37);
+}
+.headerNavbar .a-dropdown {
+  text-decoration: none;
+  font-size: 15pt;
+  color: white;
+  font-family: motiva;
+}
+.headerNavbar .ul-dropdown {
+  background-color: rgb(61, 68, 80);
+  transition: opacity 0.3s;
+}
+.headerNavbar .li-ul-dropdown {
+  color: white !important;
+}
+.headerNavbar .li-ul-dropdown:hover {
+  color: black !important;
+  cursor: pointer;
+}
+
+.upHeader {
+  background-color: rgb(23, 29, 37);
+}
+.upHeader button {
+  background-color: green;
+  font-size: 10pt;
+}
+.upHeader button:hover {
+  background-color: greenyellow;
+}
+
+/*# sourceMappingURL=style.css.map */
