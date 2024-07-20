@@ -111,28 +111,37 @@ a {
   flex-direction: row;
   flex-wrap: nowrap;
   padding-left: 0pt;
-  background-color: yellow;
+  height: 30pt;
+  align-items: center;
+  width: 70%;
 }
-.middlePage .middleNavBar .ulMiddleNavBar > li {
+.middlePage .middleNavBar .ulMiddleNavBar > div {
   color: white;
   flex-grow: 4;
   font-weight: bold;
   font-size: 10pt;
   text-shadow: 1pt 1pt rgb(93, 93, 93);
   position: relative;
+  padding: 8pt;
 }
-.middlePage .middleNavBar .ulMiddleNavBar > li:hover {
+.middlePage .middleNavBar .ulMiddleNavBar > div:hover {
   cursor: pointer;
   background-image: linear-gradient(to right, #307fbf, transparent);
 }
-.middlePage .middleNavBar .ulMiddleNavBar > li .dropdownMiddleNavBar {
+.middlePage .middleNavBar .ulMiddleNavBar > div .dropdownMiddleNavBar {
   display: none;
 }
-.middlePage .middleNavBar .ulMiddleNavBar > li:nth-child(1):hover .dropdownMiddleNavBar {
+.middlePage .middleNavBar .ulMiddleNavBar > div .dropdownMiddleNavBar2 {
+  display: none;
+}
+.middlePage .middleNavBar .ulMiddleNavBar > div .dropdownMiddleNavBar3 {
+  display: none;
+}
+.middlePage .middleNavBar .ulMiddleNavBar > div:nth-child(1):hover .dropdownMiddleNavBar {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 29pt;
+  top: 26pt;
   left: 0pt;
   background-image: linear-gradient(180deg, rgb(87, 88, 96) 0%, rgb(45, 46, 54) 100%);
   animation-name: topbardropdown;
@@ -142,17 +151,134 @@ a {
   box-shadow: -1px -1px 15px 1px black;
   cursor: initial;
 }
-.middlePage .middleNavBar .ulMiddleNavBar > li:nth-child(1):hover .dropdownMiddleNavBar li {
-  display: inline-block;
+.middlePage .middleNavBar .ulMiddleNavBar > div:nth-child(1):hover .dropdownMiddleNavBar li {
   font-size: 9pt;
   color: rgb(219, 212, 212);
   font-weight: bold;
-  padding-left: 0;
+  padding: 8pt;
+  display: inline-block;
 }
-.middlePage .middleNavBar .ulMiddleNavBar > li:nth-child(1):hover .dropdownMiddleNavBar li:hover {
+.middlePage .middleNavBar .ulMiddleNavBar > div:nth-child(1):hover .dropdownMiddleNavBar li:hover {
   text-decoration: underline;
   color: white;
   cursor: pointer;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 29pt;
+  left: 0pt;
+  background-image: linear-gradient(180deg, rgb(87, 88, 96) 0%, rgb(45, 46, 54) 100%);
+  animation-name: topbardropdown;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  width: 260pt;
+  height: 170pt;
+  box-shadow: -1px -1px 15px 1px black;
+  flex-wrap: wrap;
+  cursor: initial;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 li {
+  padding: 4pt;
+  display: inline-block;
+  font-size: 8pt;
+  color: rgb(219, 212, 212);
+  font-weight: bold;
+  margin-left: 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(1) li,
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(7) li,
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(10) li {
+  color: rgb(59, 162, 214) !important;
+  font-size: 10pt;
+  cursor: default;
+  padding: 6pt;
+  padding-left: 4pt;
+  text-decoration: initial !important;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(4),
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(13) {
+  width: 80pt;
+  height: 0.1pt;
+  border-top: 1pt solid white;
+  opacity: 0.5;
+  margin-left: 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(9) {
+  width: 1pt;
+  height: 150pt;
+  border-left: 1pt solid black;
+  margin-top: 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(3) li,
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(12) li {
+  margin-bottom: 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(5) li,
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(14) li {
+  margin-top: 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 li:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 29pt;
+  left: -210pt;
+  background-image: linear-gradient(180deg, rgb(87, 88, 96) 0%, rgb(45, 46, 54) 100%);
+  animation-name: topbardropdown;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  width: 50vw;
+  height: 370pt;
+  box-shadow: -1px -1px 15px 1px black;
+  flex-wrap: wrap;
+  cursor: initial;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 li {
+  padding: 4pt;
+  display: inline-block;
+  font-size: 8pt;
+  color: rgb(219, 212, 212);
+  font-weight: bold;
+  margin-left: 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 li:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 .blueDropDown {
+  color: rgb(59, 162, 214) !important;
+  font-size: 9pt;
+  cursor: initial !important;
+  padding: 6pt;
+  padding-left: 4pt;
+  text-decoration: initial !important;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 .whiteLineDropDown {
+  width: 80pt;
+  height: 0.1pt;
+  border-top: 1pt solid white;
+  opacity: 0.5;
+  margin: 2pt 0pt 2pt 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 .blackLineDropDown {
+  width: 1pt;
+  height: 350pt;
+  border-left: 1pt solid black;
+  margin-top: 3pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 .emptyDropDown {
+  padding: 4pt;
+}
+.middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 .firstItemDropDown {
+  margin-top: 23pt;
 }
 .middlePage .middleNavBar .input-group {
   margin-right: 6pt;

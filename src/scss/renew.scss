@@ -94,15 +94,17 @@
             flex-direction: row;
             flex-wrap: nowrap;
             padding-left: 0pt;
-            background-color: yellow;
-            > li {
+            height: 30pt;
+            align-items: center;
+            width: 70%;
+            > div {
                 color: white;
                 flex-grow: 4;
                 font-weight: bold;
                 font-size: 10pt;
                 text-shadow: 1pt 1pt rgb(93, 93, 93);
                 position: relative;
-
+                padding: 8pt;
                 &:hover {
                     cursor: pointer;
                     background-image: linear-gradient(to right, #307fbf, transparent);
@@ -111,9 +113,43 @@
                 .dropdownMiddleNavBar {
                     display: none;
                 }
+                .dropdownMiddleNavBar2 {
+                    display: none;
+                }
+                .dropdownMiddleNavBar3{
+                    display: none;
+                }
             }
-            > li:nth-child(1):hover {
+            > div:nth-child(1):hover {
                 .dropdownMiddleNavBar {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 26pt;
+                    left: 0pt;
+                    background-image: $dropdownHeaderNavbar;
+                    animation-name: topbardropdown;
+                    animation-duration: 0.8s;
+                    animation-fill-mode: forwards;
+                    width: 150pt;
+                    box-shadow: -1px -1px 15px 1px black;
+                    cursor: initial;
+                    li { 
+                        font-size: 9pt;
+                        color: $lightWhiteHeaderNavbar;
+                        font-weight: bold;
+                        padding: 8pt;
+                        display: inline-block;
+                        &:hover{
+                            text-decoration: underline;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            div:nth-child(2):hover {
+                .dropdownMiddleNavBar2 {
                     display: flex;
                     flex-direction: column;
                     position: absolute;
@@ -123,21 +159,122 @@
                     animation-name: topbardropdown;
                     animation-duration: 0.8s;
                     animation-fill-mode: forwards;
-                    width: 150pt;
+                    width: 260pt;
+                    height: 170pt;
                     box-shadow: -1px -1px 15px 1px black;
+                    flex-wrap: wrap;
                     cursor: initial;
+
                     li {
-                        
+                        padding: 4pt;
                         display: inline-block;
-                        font-size: 9pt;
+                        font-size: 8pt;
                         color: $lightWhiteHeaderNavbar;
                         font-weight: bold;
-                        padding-left: 0;
+                        margin-left: 3pt;
                     }
+
+                    div:nth-child(1) li,
+                    div:nth-child(7) li,
+                    div:nth-child(10) li {
+                        color: $topbarlblue !important;
+                        font-size: 10pt;
+                        cursor: default;
+                        padding: 6pt;
+                        padding-left: 4pt;
+                        text-decoration: initial !important;
+                    }
+
+                    div:nth-child(4),
+                    div:nth-child(13) {
+                        width: 80pt;
+                        height: 0.1pt;
+                        border-top: 1pt solid white;
+                        opacity: 0.5;
+                        margin-left: 3pt;
+                    }
+
+                    div:nth-child(9) {
+                        width: 1pt;
+                        height: 150pt;
+                        border-left: 1pt solid black;
+                        margin-top: 3pt;
+                    }
+
+                    div:nth-child(3) li,
+                    div:nth-child(12) li {
+                        margin-bottom: 3pt;
+                    }
+
+                    div:nth-child(5) li,
+                    div:nth-child(14) li {
+                        margin-top: 3pt;
+                    }
+
                     li:hover {
                         text-decoration: underline;
                         color: white;
                         cursor: pointer;
+                    }
+                }
+            }
+            div:nth-child(3):hover {
+                .dropdownMiddleNavBar3 {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 29pt;
+                    left: -210pt;
+                    background-image: $dropdownHeaderNavbar;
+                    animation-name: topbardropdown;
+                    animation-duration: 0.8s;
+                    animation-fill-mode: forwards;
+                    width: 50vw;
+                    height: 370pt;
+                    box-shadow: -1px -1px 15px 1px black;
+                    flex-wrap: wrap;
+                    cursor: initial;
+
+                    li {
+                        padding: 4pt;
+                        display: inline-block;
+                        font-size: 8pt;
+                        color: $lightWhiteHeaderNavbar;
+                        font-weight: bold;
+                        margin-left: 3pt;
+                        &:hover {
+                            text-decoration: underline;
+                            color: white;
+                            cursor: pointer;
+                        }
+                    }
+                    .blueDropDown{
+                        color: $topbarlblue !important;
+                        font-size: 9pt;
+                        cursor: initial !important;
+                        padding: 6pt;
+                        padding-left: 4pt;
+                        text-decoration: initial !important;
+                    }
+                    .whiteLineDropDown{
+                        width: 80pt;
+                        height: 0.1pt;
+                        border-top: 1pt solid white;
+                        opacity: 0.5;
+                        margin: 2pt 0pt 2pt 3pt;
+                    }
+                    .blackLineDropDown {
+                        width: 1pt;
+                        height: 350pt;
+                        border-left: 1pt solid black;
+                        margin-top: 3pt;
+                    }
+                    .emptyDropDown{
+                        padding: 4pt;
+
+                    }
+                    .firstItemDropDown{
+                        margin-top: 23pt;
                     }
                 }
             }
