@@ -1,15 +1,15 @@
 .headerNavbar {
     background-color: $header-color;
-    height: 60pt;
+    height: 8vh;
     > img {
-        margin-bottom: 15pt;
+        margin-bottom: 2rem;
     }
     .ul-dropdown {
         transition: opacity 0.3s;
         display: flex;
         > li {
             color: $ulHeaderNavbar !important;
-            padding: 5pt;
+            padding: 0.5rem;
             font-family: motiva;
             font-weight: 900;
             position: relative;
@@ -27,8 +27,8 @@
                     background-color: $ulLiHeaderNavbar;
                     top: 20pt;
                     font-weight: normal;
-                    font-size: 10pt;
-                    width: 110pt;
+                    font-size: 0.8rem;
+                    width: 7vw;
                     flex-direction: column;
                     border-radius: 1pt;
                     align-items: flex-start;
@@ -41,8 +41,8 @@
         .ul2-dropdown {
             display: none;
             > li {
-                padding: 5pt;
-                padding-right: 80pt;
+                padding: 0.5rem;
+                padding-right: 20rem;
                 width: max-content;
 
                 &:hover {
@@ -58,53 +58,54 @@
     background-color: $header-color;
     button {
         background-color: green;
-        font-size: 10pt;
+        font-size: 1rem;
         &:hover {
             background-color: greenyellow;
         }
     }
 }
-.sideBar {
-    // background-color: blue;
-    height: 100vh;
-}
 .mainDiv {
     display: flex;
 }
-.emptyBar {
-    // background-color: blue;
+.sideBar {
+    background-color: blue;
     height: 100vh;
+    width: 30rem;
+}
+.emptyBar {
+    background-color: blue;
+    height: 100vh;
+    width: 30rem;
 }
 .middlePage {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     z-index: 1;
+    width: 60rem;
+    flex-shrink: 0;
     .middleNavBar {
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
         align-items: center;
-        margin-top: 20pt;
-        height: 30pt;
+        margin-top: 2rem;
+        height: 4vh;
         position: relative;
         background-image: linear-gradient(to right, #3b6490, #2e6096, #0f216e);
         .ulMiddleNavBar {
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;
             padding-left: 0pt;
-            height: 30pt;
+            height: 4vh;
             align-items: center;
             width: 70%;
             > div {
                 color: white;
-                flex-grow: 4;
                 font-weight: bold;
-                font-size: 10pt;
+                font-size: 0.8rem;
                 text-shadow: 1pt 1pt rgb(93, 93, 93);
                 position: relative;
-                padding: 8pt;
+                padding: 0.8rem;
+                flex-shrink: 0;
                 &:hover {
                     cursor: pointer;
                     background-image: linear-gradient(to right, #307fbf, transparent);
@@ -131,14 +132,14 @@
                     animation-name: topbardropdown;
                     animation-duration: 0.8s;
                     animation-fill-mode: forwards;
-                    width: 150pt;
+                    width: 13rem;
                     box-shadow: -1px -1px 15px 1px black;
                     cursor: initial;
                     li { 
-                        font-size: 9pt;
+                        font-size: 0.75rem;
                         color: $lightWhiteHeaderNavbar;
                         font-weight: bold;
-                        padding: 8pt;
+                        padding: 0.6rem;
                         display: inline-block;
                         &:hover{
                             text-decoration: underline;
@@ -290,6 +291,16 @@
                     border-color: #307fbf;
                 }
             }
+        }
+    }
+    .carousel-item{
+        display: grid !important;
+        width: 90pt !important;
+        grid-template-columns: 15% 15% 15% 15% 15% 15%;
+        grid-template-columns: 20% 20% 20% 20%;
+        .carouselMain{
+            grid-column: 1 2;
+            grid-row: 1 2;
         }
     }
 }

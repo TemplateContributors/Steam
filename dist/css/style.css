@@ -13,10 +13,10 @@ a {
 }
 .headerNavbar {
   background-color: rgb(23, 29, 37);
-  height: 60pt;
+  height: 8vh;
 }
 .headerNavbar > img {
-  margin-bottom: 15pt;
+  margin-bottom: 2rem;
 }
 .headerNavbar .ul-dropdown {
   transition: opacity 0.3s;
@@ -24,7 +24,7 @@ a {
 }
 .headerNavbar .ul-dropdown > li {
   color: rgb(224, 224, 224) !important;
-  padding: 5pt;
+  padding: 0.5rem;
   font-family: motiva;
   font-weight: 900;
   position: relative;
@@ -42,8 +42,8 @@ a {
   background-color: rgb(61, 68, 80);
   top: 20pt;
   font-weight: normal;
-  font-size: 10pt;
-  width: 110pt;
+  font-size: 0.8rem;
+  width: 7vw;
   flex-direction: column;
   border-radius: 1pt;
   align-items: flex-start;
@@ -55,8 +55,8 @@ a {
   display: none;
 }
 .headerNavbar .ul-dropdown .ul2-dropdown > li {
-  padding: 5pt;
-  padding-right: 80pt;
+  padding: 0.5rem;
+  padding-right: 20rem;
   width: max-content;
 }
 .headerNavbar .ul-dropdown .ul2-dropdown > li:hover {
@@ -70,57 +70,60 @@ a {
 }
 .upHeader button {
   background-color: green;
-  font-size: 10pt;
+  font-size: 1rem;
 }
 .upHeader button:hover {
   background-color: greenyellow;
-}
-
-.sideBar {
-  height: 100vh;
 }
 
 .mainDiv {
   display: flex;
 }
 
-.emptyBar {
+.sideBar {
+  background-color: blue;
   height: 100vh;
+  width: 30rem;
+}
+
+.emptyBar {
+  background-color: blue;
+  height: 100vh;
+  width: 30rem;
 }
 
 .middlePage {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
   z-index: 1;
+  width: 60rem;
+  flex-shrink: 0;
 }
 .middlePage .middleNavBar {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   align-items: center;
-  margin-top: 20pt;
-  height: 30pt;
+  margin-top: 2rem;
+  height: 4vh;
   position: relative;
   background-image: linear-gradient(to right, #3b6490, #2e6096, #0f216e);
 }
 .middlePage .middleNavBar .ulMiddleNavBar {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   padding-left: 0pt;
-  height: 30pt;
+  height: 4vh;
   align-items: center;
   width: 70%;
 }
 .middlePage .middleNavBar .ulMiddleNavBar > div {
   color: white;
-  flex-grow: 4;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 0.8rem;
   text-shadow: 1pt 1pt rgb(93, 93, 93);
   position: relative;
-  padding: 8pt;
+  padding: 0.8rem;
+  flex-shrink: 0;
 }
 .middlePage .middleNavBar .ulMiddleNavBar > div:hover {
   cursor: pointer;
@@ -145,15 +148,15 @@ a {
   animation-name: topbardropdown;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
-  width: 150pt;
+  width: 13rem;
   box-shadow: -1px -1px 15px 1px black;
   cursor: initial;
 }
 .middlePage .middleNavBar .ulMiddleNavBar > div:nth-child(1):hover .dropdownMiddleNavBar li {
-  font-size: 9pt;
+  font-size: 0.75rem;
   color: rgb(219, 212, 212);
   font-weight: bold;
-  padding: 8pt;
+  padding: 0.6rem;
   display: inline-block;
 }
 .middlePage .middleNavBar .ulMiddleNavBar > div:nth-child(1):hover .dropdownMiddleNavBar li:hover {
