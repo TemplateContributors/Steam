@@ -1,3 +1,6 @@
+.firstPage{
+    background: linear-gradient(180deg, rgba(42,71,94,1) 0%, rgba(27,40,56,1) 100%);
+}
 .headerNavbar {
     background-color: $header-color;
     height: 8vh;
@@ -58,7 +61,7 @@
     background-color: $header-color;
     button {
         background-color: green;
-        font-size: 1rem;
+        font-size: 0.8rem;
         &:hover {
             background-color: greenyellow;
         }
@@ -68,12 +71,12 @@
     display: flex;
 }
 .sideBar {
-    background-color: blue;
+    // background-color: blue;
     height: 100vh;
     width: 30rem;
 }
 .emptyBar {
-    background-color: blue;
+    // background-color: blue;
     height: 100vh;
     width: 30rem;
 }
@@ -136,7 +139,7 @@
                     box-shadow: -1px -1px 15px 1px black;
                     cursor: initial;
                     li { 
-                        font-size: 0.75rem;
+                        font-size: 0.8rem;
                         color: $lightWhiteHeaderNavbar;
                         font-weight: bold;
                         padding: 0.6rem;
@@ -169,7 +172,7 @@
                     li {
                         padding: 4pt;
                         display: inline-block;
-                        font-size: 8pt;
+                        font-size: 0.7rem;
                         color: $lightWhiteHeaderNavbar;
                         font-weight: bold;
                         margin-left: 3pt;
@@ -179,7 +182,7 @@
                     div:nth-child(7) li,
                     div:nth-child(10) li {
                         color: $topbarlblue !important;
-                        font-size: 10pt;
+                        font-size: 0.8rem;
                         cursor: default;
                         padding: 6pt;
                         padding-left: 4pt;
@@ -239,7 +242,7 @@
                     li {
                         padding: 4pt;
                         display: inline-block;
-                        font-size: 8pt;
+                        font-size: 0.7rem;
                         color: $lightWhiteHeaderNavbar;
                         font-weight: bold;
                         margin-left: 3pt;
@@ -251,7 +254,7 @@
                     }
                     .blueDropDown{
                         color: $topbarlblue !important;
-                        font-size: 9pt;
+                        font-size: 0.7rem;
                         cursor: initial !important;
                         padding: 6pt;
                         padding-left: 4pt;
@@ -293,14 +296,47 @@
             }
         }
     }
-    .carousel-item{
+    .carouselClass{
         display: grid !important;
-        width: 90pt !important;
-        grid-template-columns: 15% 15% 15% 15% 15% 15%;
-        grid-template-columns: 20% 20% 20% 20%;
+        width: 100% !important;
+        height: 350pt !important;
+        background-color: #0B151E;
+        grid-template-areas:
+        'main main main main texttop texttop'
+        'main main main main sq1 sq2'
+        'main main main main sq3 sq4'
+        'main main main main textbottom textbottom ';
+        gap: 5px;
+
         .carouselMain{
-            grid-column: 1 2;
-            grid-row: 1 2;
+            grid-area: main;
+        }
+        .carouselTextTop{
+            grid-area: texttop;
+        }
+        .carouselSq1{
+            grid-area: sq1;
+        }
+        .carouselSq2{
+            grid-area: sq2;
+        }
+        .carouselSq3{
+            grid-area: sq3;
+        }
+        .carouselSq4{
+            grid-area: sq4;
+        }
+        .carouselTextBottom{
+            grid-area: textbottom;
+        }
+        .topSeller{
+            font-size: 0.7rem;
+            padding: 2pt;
+        }
+        .offPrice{
+            background-color:$offBackground;
+            color: $offTextColor;
+            padding: 0.5pt;
         }
     }
 }

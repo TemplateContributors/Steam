@@ -11,6 +11,10 @@ a {
   font-family: motiva;
   src: url(), local(motiva sans);
 }
+.firstPage {
+  background: linear-gradient(180deg, rgb(42, 71, 94) 0%, rgb(27, 40, 56) 100%);
+}
+
 .headerNavbar {
   background-color: rgb(23, 29, 37);
   height: 8vh;
@@ -70,7 +74,7 @@ a {
 }
 .upHeader button {
   background-color: green;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .upHeader button:hover {
   background-color: greenyellow;
@@ -81,13 +85,11 @@ a {
 }
 
 .sideBar {
-  background-color: blue;
   height: 100vh;
   width: 30rem;
 }
 
 .emptyBar {
-  background-color: blue;
   height: 100vh;
   width: 30rem;
 }
@@ -153,7 +155,7 @@ a {
   cursor: initial;
 }
 .middlePage .middleNavBar .ulMiddleNavBar > div:nth-child(1):hover .dropdownMiddleNavBar li {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: rgb(219, 212, 212);
   font-weight: bold;
   padding: 0.6rem;
@@ -183,7 +185,7 @@ a {
 .middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 li {
   padding: 4pt;
   display: inline-block;
-  font-size: 8pt;
+  font-size: 0.7rem;
   color: rgb(219, 212, 212);
   font-weight: bold;
   margin-left: 3pt;
@@ -192,7 +194,7 @@ a {
 .middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(7) li,
 .middlePage .middleNavBar .ulMiddleNavBar div:nth-child(2):hover .dropdownMiddleNavBar2 div:nth-child(10) li {
   color: rgb(59, 162, 214) !important;
-  font-size: 10pt;
+  font-size: 0.8rem;
   cursor: default;
   padding: 6pt;
   padding-left: 4pt;
@@ -244,7 +246,7 @@ a {
 .middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 li {
   padding: 4pt;
   display: inline-block;
-  font-size: 8pt;
+  font-size: 0.7rem;
   color: rgb(219, 212, 212);
   font-weight: bold;
   margin-left: 3pt;
@@ -256,7 +258,7 @@ a {
 }
 .middlePage .middleNavBar .ulMiddleNavBar div:nth-child(3):hover .dropdownMiddleNavBar3 .blueDropDown {
   color: rgb(59, 162, 214) !important;
-  font-size: 9pt;
+  font-size: 0.7rem;
   cursor: initial !important;
   padding: 6pt;
   padding-left: 4pt;
@@ -292,6 +294,44 @@ a {
 }
 .middlePage .middleNavBar .input-group > input:hover {
   border-color: #307fbf;
+}
+.middlePage .carouselClass {
+  display: grid !important;
+  width: 100% !important;
+  height: 350pt !important;
+  background-color: #0B151E;
+  grid-template-areas: "main main main main texttop texttop" "main main main main sq1 sq2" "main main main main sq3 sq4" "main main main main textbottom textbottom ";
+  gap: 5px;
+}
+.middlePage .carouselClass .carouselMain {
+  grid-area: main;
+}
+.middlePage .carouselClass .carouselTextTop {
+  grid-area: texttop;
+}
+.middlePage .carouselClass .carouselSq1 {
+  grid-area: sq1;
+}
+.middlePage .carouselClass .carouselSq2 {
+  grid-area: sq2;
+}
+.middlePage .carouselClass .carouselSq3 {
+  grid-area: sq3;
+}
+.middlePage .carouselClass .carouselSq4 {
+  grid-area: sq4;
+}
+.middlePage .carouselClass .carouselTextBottom {
+  grid-area: textbottom;
+}
+.middlePage .carouselClass .topSeller {
+  font-size: 0.7rem;
+  padding: 2pt;
+}
+.middlePage .carouselClass .offPrice {
+  background-color: #4C6B22;
+  color: #BEEE11;
+  padding: 0.5pt;
 }
 
 @media only screen and (max-width: 600px) {

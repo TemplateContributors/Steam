@@ -12,6 +12,7 @@
     />
   </head>
   <body>
+    <section class="firstPage">
     <!-- upHeader Navbar-------------------- Start -->
     <div class="container-fluid upHeader">
       <div class="row">
@@ -71,10 +72,10 @@
 
        <!-- MiddlePagNavBare-------------------- Start -->
 
-        <div class="middleNavBar">
+        <div class="middleNavBar z-3">
           <div class="ulMiddleNavBar">
             <div>Your Store
-              <div class="dropdownMiddleNavBar">
+              <div class="dropdownMiddleNavBar z-3">
                 <div><li>Home</li></div>
                 <div><li>Community Recommandtion</li></div>
                 <div><li>Recently Viewd</li></div>
@@ -212,11 +213,71 @@
 
        <!-- Carousel-------------------- Start -->
 
-       <div id="carouselExampleAutoplaying" class="carousel slide mt-3" data-bs-ride="carousel">
+       <div id="carouselExampleAutoplaying" class="carousel slide mt-3 z-1 shadow" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            
+            <div class="carouselClass">
+
+              <img src="dist/images/carousel/nioh1.jpg" class="w-100 h-100 d-block carouselMain shadow-lg" alt="">
+              <div class="carouselTextTop w-100 d-block">
+                <h3 class="mt-2 mx-2 text-white">NIOH<sup>©</sup> 1</h3>
+              </div>
+              <img src="dist/images/carousel/nioh2.jpg" class="w-100 h-100 d-block carouselSq1" alt="">
+              <img src="dist/images/carousel/nioh3.jpg" class="w-100 h-100 d-block carouselSq2" alt="">
+              <img src="dist/images/carousel/nioh4.jpg" class="w-100 h-100 d-block carouselSq3" alt="">
+              <img src="dist/images/carousel/nioh5.jpg" class="w-100 h-100 d-block carouselSq4" alt="">
+              <div class="carouselTextBottom w-100 d-flex flex-column text-white">
+                <h5>Now Avalible</h5>
+                <div><span class="bg-secondary d-inline-block rounded topSeller">Top Seller</span></div>
+                <div class="d-flex justify-content-between mt-4 mx-2">
+                  <span class="d-inline-block offPrice rounded-1 fw-bold">-75%</span>
+                  <i class="bi bi-windows"></i>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="carousel-item ">
+            <div class="carouselClass">
+              <img src="dist/images/carousel/nioh21.jpg" class="w-100 h-100 d-block carouselMain shadow-lg" alt="">
+              <div class="carouselTextTop w-100 d-block">
+               <h3 class="mt-2 mx-2 text-white">NIOH<sup>©</sup> 2</h3>
+              </div>
+              <img src="dist/images/carousel/nioh22.jpg" class="w-100 h-100 d-block carouselSq1" alt="">
+              <img src="dist/images/carousel/nioh23.jpg" class="w-100 h-100 d-block carouselSq2" alt="">
+              <img src="dist/images/carousel/nioh24.jpg" class="w-100 h-100 d-block carouselSq3" alt="">
+              <img src="dist/images/carousel/nioh25.jpg" class="w-100 h-100 d-block carouselSq4" alt="">
+              <div class="carouselTextBottom w-100 d-flex flex-column text-white">
+                <h5>Now Avalible</h5>
+                <div><span class="bg-secondary d-inline-block rounded topSeller">Top Seller</span></div>
+                <div class="d-flex justify-content-between mt-4 mx-2">
+                  <span class="d-inline-block offPrice rounded-1 fw-bold">-55%</span>
+                  <i class="bi bi-windows"></i>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <div class="carouselClass">
+            <img src="dist/images/carousel/ghost1.jpg" class="w-100 h-100 d-block carouselMain shadow-lg" alt="">
+            <div class="carouselTextTop w-100 d-block">
+             <h3 class="mt-2 mx-2 text-white">GHOST OF TSUSHIMA<sup>©</sup></h3>
+            </div>
+            <img src="dist/images/carousel/ghost2.jpg" class="w-100 h-100 d-block carouselSq1" alt="">
+            <img src="dist/images/carousel/ghost3.jpg" class="w-100 h-100 d-block carouselSq2" alt="">
+            <img src="dist/images/carousel/ghost4.jpg" class="w-100 h-100 d-block carouselSq3" alt="">
+            <img src="dist/images/carousel/ghost5.jpg" class="w-100 h-100 d-block carouselSq4" alt="">
+            <div class="carouselTextBottom w-100 d-flex flex-column text-white">
+              <h5>Best of Playstation</h5>
+              <div><span class="bg-secondary d-inline-block rounded topSeller">Top Seller</span></div>
+              <div class="d-flex justify-content-between mt-4 mx-2">
+                <span class="d-inline-block offPrice rounded-1 fw-bold">-10%</span>
+                <i class="bi bi-windows"></i>
+              </div>
+            </div>
+        </div>
+      </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -231,7 +292,7 @@
 
       <div class="emptyBar"></div>
     </div>
-
+  </section>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
