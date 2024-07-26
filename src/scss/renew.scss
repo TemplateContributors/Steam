@@ -86,6 +86,7 @@
     z-index: 1;
     width: 60rem;
     flex-shrink: 0;
+    position: relative;
     .middleNavBar {
         display: flex;
         flex-direction: row;
@@ -337,6 +338,42 @@
             background-color:$offBackground;
             color: $offTextColor;
             padding: 0.5pt;
+        }
+        sup{
+            font-size: 1rem;
+        }
+    }
+    .prevBtnCarsoul{
+        position: absolute !important;
+        top: 180pt !important;
+        left: -30pt !important;
+        background-color: BLUE;
+        height: 80PT;
+        width: 30pt;
+        background-image: linear-gradient(to right,#141E2A,#212F41);
+        &:hover{
+            background-image: linear-gradient(to right,#465D71,#0F1720);
+        }
+    }
+    .nextBtnCarsoul{
+        position: absolute !important;
+        top: 180pt !important;
+        right: -30pt !important;
+        background-color: BLUE;
+        height: 80PT;
+        width: 30pt;
+        background-image: linear-gradient(to right,#141E2A,#212F41);
+        &:hover{
+            background-image: linear-gradient(to right,#465D71,#0F1720);
+        }
+    }
+    .carsoulIndicator{
+        position: absolute !important;
+        top: 350pt !important;
+        button{
+            width: 12pt;
+            height: 6pt;
+            border-radius: 4pt;
         }
     }
 }

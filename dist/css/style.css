@@ -100,6 +100,7 @@ a {
   z-index: 1;
   width: 60rem;
   flex-shrink: 0;
+  position: relative;
 }
 .middlePage .middleNavBar {
   display: flex;
@@ -332,6 +333,42 @@ a {
   background-color: #4C6B22;
   color: #BEEE11;
   padding: 0.5pt;
+}
+.middlePage .carouselClass sup {
+  font-size: 1rem;
+}
+.middlePage .prevBtnCarsoul {
+  position: absolute !important;
+  top: 180pt !important;
+  left: -30pt !important;
+  background-color: BLUE;
+  height: 80PT;
+  width: 30pt;
+  background-image: linear-gradient(to right, #141E2A, #212F41);
+}
+.middlePage .prevBtnCarsoul:hover {
+  background-image: linear-gradient(to right, #465D71, #0F1720);
+}
+.middlePage .nextBtnCarsoul {
+  position: absolute !important;
+  top: 180pt !important;
+  right: -30pt !important;
+  background-color: BLUE;
+  height: 80PT;
+  width: 30pt;
+  background-image: linear-gradient(to right, #141E2A, #212F41);
+}
+.middlePage .nextBtnCarsoul:hover {
+  background-image: linear-gradient(to right, #465D71, #0F1720);
+}
+.middlePage .carsoulIndicator {
+  position: absolute !important;
+  top: 350pt !important;
+}
+.middlePage .carsoulIndicator button {
+  width: 12pt;
+  height: 6pt;
+  border-radius: 4pt;
 }
 
 @media only screen and (max-width: 600px) {

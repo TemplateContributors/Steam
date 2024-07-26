@@ -72,7 +72,7 @@
 
        <!-- MiddlePagNavBare-------------------- Start -->
 
-        <div class="middleNavBar z-3">
+         <div class="middleNavBar z-3">
           <div class="ulMiddleNavBar">
             <div>Your Store
               <div class="dropdownMiddleNavBar z-3">
@@ -209,15 +209,19 @@
               <i class="bi bi-search"></i>
             </button>
           </div>
-        </div>
+         </div>
 
        <!-- Carousel-------------------- Start -->
 
-       <div id="carouselExampleAutoplaying" class="carousel slide mt-3 z-1 shadow" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+         <div id="carouselExampleAutoplaying" class="carousel slide mt-3 z-1 shadow carousel-fade"  data-bs-ride="carousel">
+          <div class="carousel-indicators carsoulIndicator">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+           <div class="carousel-inner">
+           <div class="carousel-item active" data-bs-interval="3000">
             <div class="carouselClass">
-
               <img src="dist/images/carousel/nioh1.jpg" class="w-100 h-100 d-block carouselMain shadow-lg" alt="">
               <div class="carouselTextTop w-100 d-block">
                 <h3 class="mt-2 mx-2 text-white">NIOH<sup>©</sup> 1</h3>
@@ -235,7 +239,7 @@
                 </div>
               </div>
             </div>
-          </div>
+           </div>
 
           <div class="carousel-item ">
             <div class="carouselClass">
@@ -256,8 +260,8 @@
                 </div>
               </div>
           </div>
-        </div>
-        <div class="carousel-item ">
+          </div>
+          <div class="carousel-item ">
           <div class="carouselClass">
             <img src="dist/images/carousel/ghost1.jpg" class="w-100 h-100 d-block carouselMain shadow-lg" alt="">
             <div class="carouselTextTop w-100 d-block">
@@ -276,20 +280,24 @@
               </div>
             </div>
         </div>
-      </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
           </div>
-        </div>
-      </div>
+           </div>
+         </div>
 
+        <button class="carousel-control-prev prevBtnCarsoul" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next nextBtnCarsoul" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+        </div>
+
+
+
+
+
+     
       <div class="emptyBar"></div>
     </div>
   </section>
