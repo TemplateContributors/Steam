@@ -1,0 +1,36 @@
+$(".carousel1").mouseover(function(){
+    $("#infCardCrousel1").css('display','initial');
+    $("#infCardCrousel1").css('animation-name','topbardropdown');
+    $("#infCardCrousel1").css('animation-duration','0.8s');
+    $("#infCardCrousel1").css('animation-fill-mode','forwards');
+});
+$(".carousel1").mouseleave(function(){
+    $("#infCardCrousel1").css('animation-name','out');
+    $("#infCardCrousel1").css('animation-duration','0.8s');
+    $("#infCardCrousel1").css('animation-fill-mode','forwards');
+    $("#infCardCrousel1").css('display','none');
+});
+$(".carousel2").mouseover(function(){
+    $("#infCardCrousel2").css('display','initial');
+    $("#infCardCrousel2").css('animation-name','topbardropdown');
+    $("#infCardCrousel2").css('animation-duration','0.8s');
+    $("#infCardCrousel2").css('animation-fill-mode','forwards');
+});
+$(".carousel2").mouseleave(function(){
+    $("#infCardCrousel2").css('animation-name','out');
+    $("#infCardCrousel2").css('animation-duration','0.8s');
+    $("#infCardCrousel2").css('animation-fill-mode','forwards');
+    $("#infCardCrousel2").css('display','none');
+});
+$(".carousel3").mouseover(function(){
+    $("#infCardCrousel3").css('display','initial');
+    $("#infCardCrousel3").css('animation-name','topbardropdown');
+    $("#infCardCrousel3").css('animation-duration','0.8s');
+    $("#infCardCrousel3").css('animation-fill-mode','forwards');
+});
+$(".carousel3").mouseleave(function(){
+    $("#infCardCrousel3").css('animation-name','out');
+    $("#infCardCrousel3").css('animation-duration','0.8s');
+    $("#infCardCrousel3").css('animation-fill-mode','forwards');
+    $("#infCardCrousel3").css('display','none');
+});

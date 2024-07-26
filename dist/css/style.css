@@ -312,15 +312,31 @@ a {
 }
 .middlePage .carouselClass .carouselSq1 {
   grid-area: sq1;
+  opacity: 0.6;
+}
+.middlePage .carouselClass .carouselSq1:hover {
+  opacity: 1;
 }
 .middlePage .carouselClass .carouselSq2 {
   grid-area: sq2;
+  opacity: 0.6;
+}
+.middlePage .carouselClass .carouselSq2:hover {
+  opacity: 1;
 }
 .middlePage .carouselClass .carouselSq3 {
   grid-area: sq3;
+  opacity: 0.6;
+}
+.middlePage .carouselClass .carouselSq3:hover {
+  opacity: 1;
 }
 .middlePage .carouselClass .carouselSq4 {
   grid-area: sq4;
+  opacity: 0.6;
+}
+.middlePage .carouselClass .carouselSq4:hover {
+  opacity: 1;
 }
 .middlePage .carouselClass .carouselTextBottom {
   grid-area: textbottom;
@@ -370,6 +386,25 @@ a {
   height: 6pt;
   border-radius: 4pt;
 }
+.middlePage .infCardCrousel {
+  background-color: white;
+  width: 220pt;
+  height: 250pt;
+  top: 120pt;
+  left: 720pt;
+  font-size: 0.9rem;
+  display: none;
+}
+.middlePage .infCardCrousel .carousel-item img {
+  height: 100pt;
+  display: none;
+}
+.middlePage .infCardCrousel span:nth-child(2) {
+  font-size: 0.8rem;
+}
+.middlePage .infCardCrousel span:nth-child(5) {
+  color: #59b4ff !important;
+}
 
 @media only screen and (max-width: 600px) {
   .upHeader {
@@ -399,6 +434,17 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

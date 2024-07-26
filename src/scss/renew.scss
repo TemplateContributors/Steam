@@ -317,15 +317,31 @@
         }
         .carouselSq1{
             grid-area: sq1;
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
         }
         .carouselSq2{
             grid-area: sq2;
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
         }
         .carouselSq3{
             grid-area: sq3;
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
         }
         .carouselSq4{
             grid-area: sq4;
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
         }
         .carouselTextBottom{
             grid-area: textbottom;
@@ -374,6 +390,27 @@
             width: 12pt;
             height: 6pt;
             border-radius: 4pt;
+        }
+    }
+    .infCardCrousel{
+        background-color: white;
+        width: 220pt;
+        height: 250pt;
+        top: 120pt;
+        left: 720pt;
+        font-size: 0.9rem;
+        display: none;
+        .carousel-item{
+            img{
+                height: 100pt;
+                display: none;
+            }       
+        }
+        span:nth-child(2){
+            font-size: 0.8rem;
+        }
+        span:nth-child(5){
+            color: #59b4ff !important;
         }
     }
 }
