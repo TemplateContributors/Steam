@@ -1,15 +1,24 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 950px) {
     .upHeader{
         display: none;
     }
     .headerNavbar{
-        img{
-            width: 50%;
+        position:fixed !important;
+        top: 0 !important;
+        z-index: 99;
+        ul{
+            display: none !important;
         }
     }
+    
 }
-@media only screen and (max-width: 1401px) {
-    // .emptyBar{
-    //     display: none;
-    // }
+@media only screen and (max-width: 1620px) {
+    .infCardCrousel{
+        left: -220pt !important;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .sideBar{
+        flex-shrink: 2;
+    }
 }

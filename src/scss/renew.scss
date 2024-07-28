@@ -79,6 +79,7 @@
     // background-color: blue;
     height: 100vh;
     width: 30rem;
+    flex-shrink: 2;
 }
 .middlePage {
     display: flex;
@@ -311,6 +312,7 @@
 
         .carouselMain{
             grid-area: main;
+            box-shadow: 10px 10px 2px;
         }
         .carouselTextTop{
             grid-area: texttop;
