@@ -1,11 +1,19 @@
 .firstPage{
     background: linear-gradient(180deg, rgba(42,71,94,1) 0%, rgba(27,40,56,1) 100%);
 }
+.headerNavbarRespansive{
+    width: 200pt;
+    height: 100vh;
+    position: absolute;
+    display: none;
+}
 .headerNavbar {
     background-color: $header-color;
     height: 8vh;
     > img {
         margin-bottom: 2rem;
+        flex-shrink: 0;
+        width: 150pt;
     }
     .ul-dropdown {
         transition: opacity 0.3s;
@@ -36,7 +44,7 @@
                     border-radius: 1pt;
                     align-items: flex-start;
                     padding-left: 0pt;
-                    z-index: 5;
+                    z-index: 2;
                     overflow: hidden;
                 }
             }

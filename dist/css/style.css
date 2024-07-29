@@ -15,12 +15,21 @@ a {
   background: linear-gradient(180deg, rgb(42, 71, 94) 0%, rgb(27, 40, 56) 100%);
 }
 
+.headerNavbarRespansive {
+  width: 200pt;
+  height: 100vh;
+  position: absolute;
+  display: none;
+}
+
 .headerNavbar {
   background-color: rgb(23, 29, 37);
   height: 8vh;
 }
 .headerNavbar > img {
   margin-bottom: 2rem;
+  flex-shrink: 0;
+  width: 150pt;
 }
 .headerNavbar .ul-dropdown {
   transition: opacity 0.3s;
@@ -52,7 +61,7 @@ a {
   border-radius: 1pt;
   align-items: flex-start;
   padding-left: 0pt;
-  z-index: 5;
+  z-index: 2;
   overflow: hidden;
 }
 .headerNavbar .ul-dropdown .ul2-dropdown {
@@ -408,17 +417,27 @@ a {
   color: #59b4ff !important;
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 992px) {
   .upHeader {
     display: none;
   }
   .headerNavbar {
     position: fixed !important;
     top: 0 !important;
-    z-index: 99;
+    z-index: 2;
   }
   .headerNavbar ul {
     display: none !important;
+  }
+  .headerNavbar i {
+    cursor: pointer;
+  }
+  .headerNavbar img {
+    margin-top: 25pt;
+    width: 100pt;
+  }
+  .headerNavbar .headerNavbarColRespansive {
+    display: initial !important;
   }
 }
 @media only screen and (max-width: 1620px) {
