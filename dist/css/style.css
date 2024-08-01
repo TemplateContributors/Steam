@@ -15,11 +15,57 @@ a {
   background: linear-gradient(180deg, rgb(42, 71, 94) 0%, rgb(27, 40, 56) 100%);
 }
 
+.upHeader {
+  background-color: rgb(23, 29, 37);
+}
+.upHeader button {
+  background-color: green;
+  font-size: 0.8rem;
+}
+.upHeader button:hover {
+  background-color: greenyellow;
+}
+
 .headerNavbarRespansive {
-  width: 200pt;
+  width: 300px;
   height: 100vh;
   position: absolute;
+  flex-direction: column;
   display: none;
+}
+.headerNavbarRespansive > div {
+  color: #ADBDAE;
+  font-size: 2rem;
+  padding: 10px;
+  transition: width 1s;
+}
+.headerNavbarRespansive .headerNavbarRespansiveSmall {
+  font-size: 0.8rem;
+  color: #8A8A8A !important;
+}
+.headerNavbarRespansive img {
+  width: 150px;
+}
+.headerNavbarRespansive span {
+  color: #8A8A8A !important;
+  font-size: 0.7rem;
+}
+.headerNavbarRespansive ul {
+  display: none;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: width 1s;
+}
+.headerNavbarRespansive li {
+  padding: 2px;
+}
+.headerNavbarRespansive .headerNavbarRespansiveMenu {
+  display: initial;
+  background-color: #192533;
+}
+.headerNavbarRespansive .headerNavbarRespansiveButton {
+  display: block !important;
 }
 
 .headerNavbar {
@@ -29,7 +75,7 @@ a {
 .headerNavbar > img {
   margin-bottom: 2rem;
   flex-shrink: 0;
-  width: 150pt;
+  width: 150px;
 }
 .headerNavbar .ul-dropdown {
   transition: opacity 0.3s;
@@ -56,7 +102,7 @@ a {
   top: 20pt;
   font-weight: normal;
   font-size: 0.8rem;
-  width: 7vw;
+  width: 150px;
   flex-direction: column;
   border-radius: 1pt;
   align-items: flex-start;
@@ -76,17 +122,6 @@ a {
   background-color: white;
   color: black;
   transition: 0.1s all;
-}
-
-.upHeader {
-  background-color: rgb(23, 29, 37);
-}
-.upHeader button {
-  background-color: green;
-  font-size: 0.8rem;
-}
-.upHeader button:hover {
-  background-color: greenyellow;
 }
 
 .mainDiv {
@@ -117,7 +152,8 @@ a {
   flex-direction: row;
   align-items: center;
   margin-top: 2rem;
-  height: 4vh;
+  height: 40px;
+  min-height: 40px;
   position: relative;
   background-image: linear-gradient(to right, #3b6490, #2e6096, #0f216e);
 }
@@ -125,7 +161,6 @@ a {
   display: flex;
   flex-direction: row;
   padding-left: 0pt;
-  height: 4vh;
   align-items: center;
   width: 70%;
 }
@@ -135,7 +170,7 @@ a {
   font-size: 0.8rem;
   text-shadow: 1pt 1pt rgb(93, 93, 93);
   position: relative;
-  padding: 0.8rem;
+  padding: 10px;
   flex-shrink: 0;
 }
 .middlePage .middleNavBar .ulMiddleNavBar > div:hover {
@@ -242,14 +277,14 @@ a {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 29pt;
-  left: -210pt;
+  top: 45px;
+  left: -250px;
   background-image: linear-gradient(180deg, rgb(87, 88, 96) 0%, rgb(45, 46, 54) 100%);
   animation-name: topbardropdown;
   animation-duration: 0.8s;
   animation-fill-mode: forwards;
-  width: 50vw;
-  height: 370pt;
+  width: 750px;
+  height: 500px;
   box-shadow: -1px -1px 15px 1px black;
   flex-wrap: wrap;
   cursor: initial;
@@ -296,9 +331,10 @@ a {
 }
 .middlePage .middleNavBar .input-group {
   margin-right: 6pt;
-  width: 150pt;
+  width: 220px;
   position: absolute;
   right: 0pt;
+  border: unset;
 }
 .middlePage .middleNavBar .input-group > input {
   background-color: #316282 !important;
@@ -309,7 +345,7 @@ a {
 .middlePage .carouselClass {
   display: grid !important;
   width: 100% !important;
-  height: 350pt !important;
+  height: 460px !important;
   background-color: #0B151E;
   grid-template-areas: "main main main main texttop texttop" "main main main main sq1 sq2" "main main main main sq3 sq4" "main main main main textbottom textbottom ";
   gap: 5px;
@@ -416,6 +452,9 @@ a {
 .middlePage .infCardCrousel span:nth-child(5) {
   color: #59b4ff !important;
 }
+.middlePage .infCardCrousel .ghostTag {
+  font-size: 10px;
+}
 
 @media only screen and (max-width: 992px) {
   .upHeader {
@@ -438,6 +477,9 @@ a {
   }
   .headerNavbar .headerNavbarColRespansive {
     display: initial !important;
+  }
+  .headerNavbarRespansive {
+    display: block;
   }
 }
 @media only screen and (max-width: 1620px) {

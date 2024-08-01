@@ -1,11 +1,56 @@
 .firstPage{
     background: linear-gradient(180deg, rgba(42,71,94,1) 0%, rgba(27,40,56,1) 100%);
 }
+.upHeader {
+    background-color: $header-color;
+    button {
+        background-color: green;
+        font-size: 0.8rem;
+        &:hover {
+            background-color: greenyellow;
+        }
+    }
+}
 .headerNavbarRespansive{
-    width: 200pt;
+    width: 300px;
     height: 100vh;
     position: absolute;
+    flex-direction: column;
     display: none;
+    >div{
+        color: #ADBDAE;
+        font-size: 2rem;
+        padding: 10px;
+        transition: width 1s;
+    }
+    .headerNavbarRespansiveSmall{
+        font-size: 0.8rem;
+        color: #8A8A8A !important;
+    }
+    img{
+        width: 150px;
+    }
+    span{
+        color: #8A8A8A !important;
+        font-size: 0.7rem;
+    }
+    ul{
+        display: none;
+        margin-left: 15px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: width 1s;
+    }
+    li{
+        padding: 2px;
+    }
+    .headerNavbarRespansiveMenu{
+        display: initial;
+        background-color: #192533;
+    }
+    .headerNavbarRespansiveButton{
+        display: block !important;
+    }
 }
 .headerNavbar {
     background-color: $header-color;
@@ -13,7 +58,7 @@
     > img {
         margin-bottom: 2rem;
         flex-shrink: 0;
-        width: 150pt;
+        width: 150px ;
     }
     .ul-dropdown {
         transition: opacity 0.3s;
@@ -39,7 +84,7 @@
                     top: 20pt;
                     font-weight: normal;
                     font-size: 0.8rem;
-                    width: 7vw;
+                    width: 150px;
                     flex-direction: column;
                     border-radius: 1pt;
                     align-items: flex-start;
@@ -62,16 +107,6 @@
                     transition: 0.1s all;
                 }
             }
-        }
-    }
-}
-.upHeader {
-    background-color: $header-color;
-    button {
-        background-color: green;
-        font-size: 0.8rem;
-        &:hover {
-            background-color: greenyellow;
         }
     }
 }
@@ -101,14 +136,14 @@
         flex-direction: row;
         align-items: center;
         margin-top: 2rem;
-        height: 4vh;
+        height: 40px;
+        min-height: 40px;
         position: relative;
         background-image: linear-gradient(to right, #3b6490, #2e6096, #0f216e);
         .ulMiddleNavBar {
             display: flex;
             flex-direction: row;
             padding-left: 0pt;
-            height: 4vh;
             align-items: center;
             width: 70%;
             > div {
@@ -117,7 +152,7 @@
                 font-size: 0.8rem;
                 text-shadow: 1pt 1pt rgb(93, 93, 93);
                 position: relative;
-                padding: 0.8rem;
+                padding: 10px;
                 flex-shrink: 0;
                 &:hover {
                     cursor: pointer;
@@ -237,14 +272,14 @@
                     display: flex;
                     flex-direction: column;
                     position: absolute;
-                    top: 29pt;
-                    left: -210pt;
+                    top: 45px;
+                    left: -250px;
                     background-image: $dropdownHeaderNavbar;
                     animation-name: topbardropdown;
                     animation-duration: 0.8s;
                     animation-fill-mode: forwards;
-                    width: 50vw;
-                    height: 370pt;
+                    width: 750px;
+                    height: 500px;
                     box-shadow: -1px -1px 15px 1px black;
                     flex-wrap: wrap;
                     cursor: initial;
@@ -295,9 +330,10 @@
         }
         .input-group {
             margin-right: 6pt;
-            width: 150pt;
+            width: 220px;
             position: absolute;
             right: 0pt;
+            border: unset;
             > input {
                 background-color: #316282 !important;
                 &:hover {
@@ -309,7 +345,7 @@
     .carouselClass{
         display: grid !important;
         width: 100% !important;
-        height: 350pt !important;
+        height: 460px !important;
         background-color: #0B151E;
         grid-template-areas:
         'main main main main texttop texttop'
@@ -421,6 +457,9 @@
         }
         span:nth-child(5){
             color: #59b4ff !important;
+        }
+        .ghostTag{
+                font-size: 10px;
         }
     }
 }

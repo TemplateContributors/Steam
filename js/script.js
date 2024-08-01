@@ -1,3 +1,6 @@
+    // Carsoul--------------------------------------
+
+
 $(".carousel1").mouseover(function(){
     $("#infCardCrousel1").css('display','initial');
     $("#infCardCrousel1").css('animation','1s forwards topbardropdown');
@@ -31,3 +34,23 @@ $(elements[i]).mouseleave(function(){
     $('.carousel1 img:nth-child(1)').attr('src',"dist/images/carousel/nioh1.jpg");
 })
 }
+
+
+
+    // Header Navbar Rasponsive--------------------------------------
+
+
+$('.headerNavbarRespansive div:nth-child(2)').click(function(){
+    $('.headerNavbarRespansive div:nth-child(2) div ul:first-of-type').toggleClass('headerNavbarRespansiveMenu');
+    $('.headerNavbarRespansive div:nth-child(2)').toggleClass('headerNavbarRespansiveMenu');
+});
+$('.headerNavbarRespansive div:nth-child(3)').click(function(){
+    $('.headerNavbarRespansive div:nth-child(3) div ul:first-of-type').toggleClass('headerNavbarRespansiveMenu');
+    $('.headerNavbarRespansive div:nth-child(3)').toggleClass('headerNavbarRespansiveMenu');
+});
+// $('.headerNavbar i').click(function(){
+//     $('.headerNavbarRespansive').css('display','initial !important');
+// });
+// $('body').click(function(){
+//     $('.headerNavbarRespansive').css('display','none !important');
+// });
