@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
   </head>
-  <body class="milad">
+  <body>
     <section class="firstPage">
     <!-- upHeader Navbar-------------------- Start -->
     <div class="container-fluid upHeader">
@@ -29,7 +29,7 @@
     <!-- headerNavbar-------------------- Start -->
     <div class="container-fluid d-flex flex-row align-items-center p-3 headerNavbar">
       <div class="col-lg-3"></div>
-      <i class="bi bi-border-width text-white d-lg-none "></i>
+      <i class="bi bi-border-width text-white d-lg-none" id="sandwichButton"></i>
       <div class="col-5 headerNavbarColRespansive d-none"></div>
       <img src="dist/images/logo_steam.svg" alt="" />
       <nav>
@@ -101,6 +101,29 @@
 
      </div>
 
+    <!-- MiddleNavbarRespansive-------------------- Start -->
+     <div class="d-none flex-column middleNavbarRespansive text-white">
+      <div class="firstDivMiddleNavbarResponsive"></div>
+      <div >Your Store </div>
+      <div class="d-flex flex-column dropdownMiddleNavbarResponsiv ">
+        <nav>Home</nav>
+        <nav>Commuinity Recommendations</nav>
+        <nav>Recently Viewed</nav>
+        <nav>Steam Curators</nav>
+      </div>
+      <div>New & Noteworthy</div>
+      <div class="d-flex flex-column dropdown2MiddleNavbarResponsiv ">
+        <nav>Top Sellers</nav>
+        <nav>Most Played</nav>
+        <nav>New Releases</nav>
+        <nav>Upcoming Releases</nav>
+        <nav>Recently Updated</nav>
+      </div>
+      <div>Categories</div>
+      <div>Points Shop</div>
+      <div>News</div>
+      <div>Labs</div>
+     </div>
 
     <!-- MainDiv-------------------- Start -->
 
@@ -328,7 +351,7 @@
          </div>
 
        <!-- Carousel Button-------------------- Start -->
-        <div>
+        <div class="carouselButtons">
         <button class="carousel-control-prev prevBtnCarsoul" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -438,9 +461,43 @@
           </div>
         </div>
 
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="dist/images/carousel/nioh1.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img src="dist/images/carousel/nioh21.jpg" alt="">
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <div class="swiper-pagination"></div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <div></div>
      
       <div class="emptyBar"></div>
     </div>

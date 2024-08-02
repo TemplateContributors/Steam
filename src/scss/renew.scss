@@ -1,5 +1,5 @@
-.firstPage{
-    background: linear-gradient(180deg, rgba(42,71,94,1) 0%, rgba(27,40,56,1) 100%);
+.firstPage {
+    background: linear-gradient(180deg, rgba(42, 71, 94, 1) 0%, rgba(27, 40, 56, 1) 100%);
 }
 .upHeader {
     background-color: $header-color;
@@ -11,45 +11,90 @@
         }
     }
 }
-.headerNavbarRespansive{
+.headerNavbarRespansive {
     width: 300px;
     height: 100vh;
     position: absolute;
     flex-direction: column;
     display: none;
-    >div{
-        color: #ADBDAE;
+    transition: all 0.5s;
+    > div {
+        color: #adbdae;
         font-size: 2rem;
         padding: 10px;
-        transition: width 1s;
+        transition: all 1s;
     }
-    .headerNavbarRespansiveSmall{
+    .headerNavbarRespansiveSmall {
         font-size: 0.8rem;
-        color: #8A8A8A !important;
+        color: #8a8a8a !important;
     }
-    img{
+    img {
         width: 150px;
     }
-    span{
-        color: #8A8A8A !important;
+    span {
+        color: #8a8a8a !important;
         font-size: 0.7rem;
     }
-    ul{
+    ul {
         display: none;
         margin-left: 15px;
         font-size: 1.5rem;
         cursor: pointer;
         transition: width 1s;
     }
-    li{
+    li {
         padding: 2px;
     }
-    .headerNavbarRespansiveMenu{
+    .headerNavbarRespansiveMenu {
         display: initial;
         background-color: #192533;
     }
-    .headerNavbarRespansiveButton{
+    .headerNavbarRespansiveButton {
         display: block !important;
+    }
+}
+.middleNavbarRespansive {
+    background: linear-gradient(90deg, #3b6390 0%, rgba(16, 35, 112, 1) 100%) !important;
+    font-size: 0.8rem;
+    transition: all 0.5;
+
+    .firstDivMiddleNavbarResponsive {
+        height: 80px;
+    }
+    > div {
+        padding: 5px;
+        font-size: 0.8rem;
+        transition: all 0.5;
+        &:hover:not(.dropdownMiddleNavbarResponsiv,.dropdown2MiddleNavbarResponsiv) {
+            background-image: linear-gradient(90deg, #2e7dbf 0%, #102471 100%);
+        }
+    }
+    .dropdownMiddleNavbarResponsiv {
+        background-image: linear-gradient(90deg, #395365 0%, #404b55 100%);
+        display: none !important;
+        transition: all 0.5;
+        nav {
+            padding: 5px;
+            &:hover {
+                text-decoration: underline;
+                text-shadow: 2px 2px 0.5 #000000;
+            }
+        }
+    }
+    .dropdown2MiddleNavbarResponsiv {
+        background-image: linear-gradient(90deg, #395365 0%, #404b55 100%);
+        display: none !important;
+        transition: all 0.5;
+        nav {
+            padding: 5px;
+            &:hover {
+                text-decoration: underline;
+                text-shadow: 2px 2px 0.5 #000000;
+            }
+        }
+    }
+    .dropdownMiddleNavbarResponsivMenu{
+    display: block !important;
     }
 }
 .headerNavbar {
@@ -58,7 +103,7 @@
     > img {
         margin-bottom: 2rem;
         flex-shrink: 0;
-        width: 150px ;
+        width: 150px;
     }
     .ul-dropdown {
         transition: opacity 0.3s;
@@ -157,7 +202,6 @@
                 &:hover {
                     cursor: pointer;
                     background-image: linear-gradient(to right, #307fbf, transparent);
-
                 }
                 .dropdownMiddleNavBar {
                     display: none;
@@ -165,7 +209,7 @@
                 .dropdownMiddleNavBar2 {
                     display: none;
                 }
-                .dropdownMiddleNavBar3{
+                .dropdownMiddleNavBar3 {
                     display: none;
                 }
             }
@@ -183,13 +227,13 @@
                     width: 13rem;
                     box-shadow: -1px -1px 15px 1px black;
                     cursor: initial;
-                    li { 
+                    li {
                         font-size: 0.8rem;
                         color: $lightWhiteHeaderNavbar;
                         font-weight: bold;
                         padding: 0.6rem;
                         display: inline-block;
-                        &:hover{
+                        &:hover {
                             text-decoration: underline;
                             color: white;
                             cursor: pointer;
@@ -297,7 +341,7 @@
                             cursor: pointer;
                         }
                     }
-                    .blueDropDown{
+                    .blueDropDown {
                         color: $topbarlblue !important;
                         font-size: 0.7rem;
                         cursor: initial !important;
@@ -305,7 +349,7 @@
                         padding-left: 4pt;
                         text-decoration: initial !important;
                     }
-                    .whiteLineDropDown{
+                    .whiteLineDropDown {
                         width: 80pt;
                         height: 0.1pt;
                         border-top: 1pt solid white;
@@ -318,11 +362,10 @@
                         border-left: 1pt solid black;
                         margin-top: 3pt;
                     }
-                    .emptyDropDown{
+                    .emptyDropDown {
                         padding: 4pt;
-
                     }
-                    .firstItemDropDown{
+                    .firstItemDropDown {
                         margin-top: 23pt;
                     }
                 }
@@ -342,103 +385,103 @@
             }
         }
     }
-    .carouselClass{
+    .carouselClass {
         display: grid !important;
         width: 100% !important;
         height: 460px !important;
-        background-color: #0B151E;
+        background-color: #0b151e;
         grid-template-areas:
-        'main main main main texttop texttop'
-        'main main main main sq1 sq2'
-        'main main main main sq3 sq4'
-        'main main main main textbottom textbottom ';
+            "main main main main texttop texttop"
+            "main main main main sq1 sq2"
+            "main main main main sq3 sq4"
+            "main main main main textbottom textbottom ";
         gap: 5px;
 
-        .carouselMain{
+        .carouselMain {
             grid-area: main;
             box-shadow: 10px 10px 2px;
         }
-        .carouselTextTop{
+        .carouselTextTop {
             grid-area: texttop;
         }
-        .carouselSq1{
+        .carouselSq1 {
             grid-area: sq1;
             opacity: 0.6;
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
         }
-        .carouselSq2{
+        .carouselSq2 {
             grid-area: sq2;
             opacity: 0.6;
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
         }
-        .carouselSq3{
+        .carouselSq3 {
             grid-area: sq3;
             opacity: 0.6;
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
         }
-        .carouselSq4{
+        .carouselSq4 {
             grid-area: sq4;
             opacity: 0.6;
-            &:hover{
+            &:hover {
                 opacity: 1;
             }
         }
-        .carouselTextBottom{
+        .carouselTextBottom {
             grid-area: textbottom;
         }
-        .topSeller{
+        .topSeller {
             font-size: 0.7rem;
             padding: 2pt;
         }
-        .offPrice{
-            background-color:$offBackground;
+        .offPrice {
+            background-color: $offBackground;
             color: $offTextColor;
             padding: 0.5pt;
         }
-        sup{
+        sup {
             font-size: 1rem;
         }
     }
-    .prevBtnCarsoul{
+    .prevBtnCarsoul {
         position: absolute !important;
         top: 180pt !important;
         left: -30pt !important;
         background-color: BLUE;
-        height: 80PT;
+        height: 80pt;
         width: 30pt;
-        background-image: linear-gradient(to right,#141E2A,#212F41);
-        &:hover{
-            background-image: linear-gradient(to right,#465D71,#0F1720);
+        background-image: linear-gradient(to right, #141e2a, #212f41);
+        &:hover {
+            background-image: linear-gradient(to right, #465d71, #0f1720);
         }
     }
-    .nextBtnCarsoul{
+    .nextBtnCarsoul {
         position: absolute !important;
         top: 180pt !important;
         right: -30pt !important;
         background-color: BLUE;
-        height: 80PT;
+        height: 80pt;
         width: 30pt;
-        background-image: linear-gradient(to right,#141E2A,#212F41);
-        &:hover{
-            background-image: linear-gradient(to right,#465D71,#0F1720);
+        background-image: linear-gradient(to right, #141e2a, #212f41);
+        &:hover {
+            background-image: linear-gradient(to right, #465d71, #0f1720);
         }
     }
-    .carsoulIndicator{
+    .carsoulIndicator {
         position: absolute !important;
         top: 350pt !important;
-        button{
+        button {
             width: 12pt;
             height: 6pt;
             border-radius: 4pt;
         }
     }
-    .infCardCrousel{
+    .infCardCrousel {
         background-color: white;
         width: 220pt;
         height: 250pt;
@@ -446,20 +489,24 @@
         left: 720pt;
         font-size: 0.9rem;
         display: none;
-        .carousel-item{
-            img{
+        .carousel-item {
+            img {
                 height: 100pt;
                 display: none;
-            }       
+            }
         }
-        span:nth-child(2){
+        span:nth-child(2) {
             font-size: 0.8rem;
         }
-        span:nth-child(5){
+        span:nth-child(5) {
             color: #59b4ff !important;
         }
-        .ghostTag{
-                font-size: 10px;
+        .ghostTag {
+            font-size: 10px;
         }
     }
 }
+.swiper {
+    width: 600px;
+    height: 300px;
+  }

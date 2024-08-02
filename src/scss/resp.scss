@@ -20,9 +20,20 @@
             display: initial !important;
         }
     }
-       .headerNavbarRespansive{
+    .headerNavbarRespansive{
         display: block ;
+        position: absolute;
+        left: -350px;
     }
+    .middleNavBar,.carousel,.carouselButtons,.infCardCrousel{
+        display: none !important;
+    }
+    .middleNavbarRespansive{
+        display: block !important;
+        
+    }
+
+
 }
 
 

@@ -32,22 +32,23 @@ a {
   position: absolute;
   flex-direction: column;
   display: none;
+  transition: all 0.5s;
 }
 .headerNavbarRespansive > div {
-  color: #ADBDAE;
+  color: #adbdae;
   font-size: 2rem;
   padding: 10px;
-  transition: width 1s;
+  transition: all 1s;
 }
 .headerNavbarRespansive .headerNavbarRespansiveSmall {
   font-size: 0.8rem;
-  color: #8A8A8A !important;
+  color: #8a8a8a !important;
 }
 .headerNavbarRespansive img {
   width: 150px;
 }
 .headerNavbarRespansive span {
-  color: #8A8A8A !important;
+  color: #8a8a8a !important;
   font-size: 0.7rem;
 }
 .headerNavbarRespansive ul {
@@ -65,6 +66,50 @@ a {
   background-color: #192533;
 }
 .headerNavbarRespansive .headerNavbarRespansiveButton {
+  display: block !important;
+}
+
+.middleNavbarRespansive {
+  background: linear-gradient(90deg, #3b6390 0%, rgb(16, 35, 112) 100%) !important;
+  font-size: 0.8rem;
+  transition: all 0.5;
+}
+.middleNavbarRespansive .firstDivMiddleNavbarResponsive {
+  height: 80px;
+}
+.middleNavbarRespansive > div {
+  padding: 5px;
+  font-size: 0.8rem;
+  transition: all 0.5;
+}
+.middleNavbarRespansive > div:hover:not(.dropdownMiddleNavbarResponsiv, .dropdown2MiddleNavbarResponsiv) {
+  background-image: linear-gradient(90deg, #2e7dbf 0%, #102471 100%);
+}
+.middleNavbarRespansive .dropdownMiddleNavbarResponsiv {
+  background-image: linear-gradient(90deg, #395365 0%, #404b55 100%);
+  display: none !important;
+  transition: all 0.5;
+}
+.middleNavbarRespansive .dropdownMiddleNavbarResponsiv nav {
+  padding: 5px;
+}
+.middleNavbarRespansive .dropdownMiddleNavbarResponsiv nav:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 0.5 #000000;
+}
+.middleNavbarRespansive .dropdown2MiddleNavbarResponsiv {
+  background-image: linear-gradient(90deg, #395365 0%, #404b55 100%);
+  display: none !important;
+  transition: all 0.5;
+}
+.middleNavbarRespansive .dropdown2MiddleNavbarResponsiv nav {
+  padding: 5px;
+}
+.middleNavbarRespansive .dropdown2MiddleNavbarResponsiv nav:hover {
+  text-decoration: underline;
+  text-shadow: 2px 2px 0.5 #000000;
+}
+.middleNavbarRespansive .dropdownMiddleNavbarResponsivMenu {
   display: block !important;
 }
 
@@ -346,7 +391,7 @@ a {
   display: grid !important;
   width: 100% !important;
   height: 460px !important;
-  background-color: #0B151E;
+  background-color: #0b151e;
   grid-template-areas: "main main main main texttop texttop" "main main main main sq1 sq2" "main main main main sq3 sq4" "main main main main textbottom textbottom ";
   gap: 5px;
 }
@@ -405,24 +450,24 @@ a {
   top: 180pt !important;
   left: -30pt !important;
   background-color: BLUE;
-  height: 80PT;
+  height: 80pt;
   width: 30pt;
-  background-image: linear-gradient(to right, #141E2A, #212F41);
+  background-image: linear-gradient(to right, #141e2a, #212f41);
 }
 .middlePage .prevBtnCarsoul:hover {
-  background-image: linear-gradient(to right, #465D71, #0F1720);
+  background-image: linear-gradient(to right, #465d71, #0f1720);
 }
 .middlePage .nextBtnCarsoul {
   position: absolute !important;
   top: 180pt !important;
   right: -30pt !important;
   background-color: BLUE;
-  height: 80PT;
+  height: 80pt;
   width: 30pt;
-  background-image: linear-gradient(to right, #141E2A, #212F41);
+  background-image: linear-gradient(to right, #141e2a, #212f41);
 }
 .middlePage .nextBtnCarsoul:hover {
-  background-image: linear-gradient(to right, #465D71, #0F1720);
+  background-image: linear-gradient(to right, #465d71, #0f1720);
 }
 .middlePage .carsoulIndicator {
   position: absolute !important;
@@ -456,6 +501,11 @@ a {
   font-size: 10px;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 @media only screen and (max-width: 992px) {
   .upHeader {
     display: none;
@@ -480,6 +530,14 @@ a {
   }
   .headerNavbarRespansive {
     display: block;
+    position: absolute;
+    left: -350px;
+  }
+  .middleNavBar, .carousel, .carouselButtons, .infCardCrousel {
+    display: none !important;
+  }
+  .middleNavbarRespansive {
+    display: block !important;
   }
 }
 @media only screen and (max-width: 1620px) {
