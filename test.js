@@ -1,7 +1,12 @@
-// $('.mainDiv').click(function(){
-//   $('.mainSpan').css('display','initial !important');
-// });
-// $('*').click(function(){
-//   $('.mainSpan').css('display','none !important');
-// });
 
+
+
+
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });

@@ -1,3 +1,8 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
 .firstPage {
     background: linear-gradient(180deg, rgba(42, 71, 94, 1) 0%, rgba(27, 40, 56, 1) 100%);
 }
@@ -65,7 +70,7 @@
         padding: 5px;
         font-size: 0.8rem;
         transition: all 0.5;
-        &:hover:not(.dropdownMiddleNavbarResponsiv,.dropdown2MiddleNavbarResponsiv) {
+        &:hover:not(.dropdownMiddleNavbarResponsiv, .dropdown2MiddleNavbarResponsiv) {
             background-image: linear-gradient(90deg, #2e7dbf 0%, #102471 100%);
         }
     }
@@ -93,8 +98,8 @@
             }
         }
     }
-    .dropdownMiddleNavbarResponsivMenu{
-    display: block !important;
+    .dropdownMiddleNavbarResponsivMenu {
+        display: block !important;
     }
 }
 .headerNavbar {
@@ -507,6 +512,38 @@
     }
 }
 .swiper {
-    width: 600px;
-    height: 300px;
-  }
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: linear-gradient(180deg,black 0%,#1B3148 100%);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        width: 60%;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        box-shadow: 0px 0px 10px 5px #1B3148;
+    }
+    span{
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+    .swiper-scrollbar{
+        margin-top: 10px;
+    }
+}
+.advTop {
+    img {
+        &:hover {
+            box-shadow: 0px 0px 10px 2px rgb(87, 173, 212);
+        }
+    }
+}
