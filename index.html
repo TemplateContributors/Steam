@@ -99,36 +99,57 @@
 
      </div>
 
-    <!-- MiddleNavbarRespansive-------------------- Start -->
-     <div class="d-none flex-column middleNavbarRespansive text-white">
-      <div class="firstDivMiddleNavbarResponsive"></div>
-      <div >Your Store </div>
-      <div class="d-flex flex-column dropdownMiddleNavbarResponsiv ">
-        <nav>Home</nav>
-        <nav>Commuinity Recommendations</nav>
-        <nav>Recently Viewed</nav>
-        <nav>Steam Curators</nav>
-      </div>
-      <div>New & Noteworthy</div>
-      <div class="d-flex flex-column dropdown2MiddleNavbarResponsiv ">
-        <nav>Top Sellers</nav>
-        <nav>Most Played</nav>
-        <nav>New Releases</nav>
-        <nav>Upcoming Releases</nav>
-        <nav>Recently Updated</nav>
-      </div>
-      <div>Categories</div>
-      <div>Points Shop</div>
-      <div>News</div>
-      <div>Labs</div>
-     </div>
+
 
     <!-- MainDiv-------------------- Start -->
 
     <div class="mainDiv">
+
+
       <!-- Sidebar-------------------- Start -->
 
-      <div class="sideBar"></div>
+      <div class="sideBar d-flex flex-column">
+        <div class="d-flex flex-column">
+          <img src="dist/images/sidebar/card.png"  width="150px">
+          <span class="sidebarType1 mt-1">STEAM GIFT CARDS</span>
+          <span class="sidebarType3">Give the Gift of Game</span>
+        </div>
+        <div class="d-flex flex-column mt-3">
+          <span class="sidebarType2 mt-3">RECENTLY VIEWED</span>
+          <span class="sidebarType3">BlackMyth - Wukong</span>
+        </div>
+        <div class="d-flex flex-column mt-3">
+          <span class="sidebarType2">RECOMENDED</span>
+          <span class="sidebarType3">By Friends</span>
+          <span class="sidebarType3">By Categories</span>
+          <span class="sidebarType3">Tags</span>
+        </div>
+        <div class="d-flex flex-column mt-3">
+          <span class="sidebarType2">BROWSE CATEGORIES</span>
+          <span class="sidebarType3">New Releases</span>
+          <span class="sidebarType3">Upcoming</span>
+          <span class="sidebarType3">Specials</span>
+          <span class="sidebarType3">VR Titles</span>
+          <span class="sidebarType3">Controller Friendlly</span>
+          <span class="sidebarType3">Great on Deck</span>
+
+        </div>
+        <div class="d-flex flex-column mt-3">
+          <span class="sidebarType2">BROWSE BY GENERS</span>
+          <span class="sidebarType3">Free to Play</span>
+          <span class="sidebarType3">Eartly Access</span>
+          <span class="sidebarType3">Action</span>
+          <span class="sidebarType3">Adventure</span>
+          <span class="sidebarType3">Casual</span>
+          <span class="sidebarType3">Cards</span>
+          <span class="sidebarType3">Hack & Slash</span>
+          <span class="sidebarType3">Strategy</span>
+          <span class="sidebarType3">RPG</span>
+          <span class="sidebarType3">Sports</span>
+
+
+        </div>
+      </div>
 
       <!-- MiddlePage-------------------- Start -->
 
@@ -275,9 +296,34 @@
           </div>
          </div>
 
-       <!-- Carousel-------------------- Start -->
+       <!-- MiddleNavbarRespansive-------------------- Start -->
+          <div class="d-none flex-column middleNavbarRespansive text-white">
+      <div class="firstDivMiddleNavbarResponsive"></div>
+      <div >Your Store </div>
+      <div class="d-flex flex-column dropdownMiddleNavbarResponsiv ">
+        <nav>Home</nav>
+        <nav>Commuinity Recommendations</nav>
+        <nav>Recently Viewed</nav>
+        <nav>Steam Curators</nav>
+      </div>
+      <div>New & Noteworthy</div>
+      <div class="d-flex flex-column dropdown2MiddleNavbarResponsiv ">
+        <nav>Top Sellers</nav>
+        <nav>Most Played</nav>
+        <nav>New Releases</nav>
+        <nav>Upcoming Releases</nav>
+        <nav>Recently Updated</nav>
+      </div>
+      <div>Categories</div>
+      <div>Points Shop</div>
+      <div>News</div>
+      <div>Labs</div>
+          </div>
 
-         <div id="carouselExampleAutoplaying" class="carousel slide mt-3 z-1 shadow carousel-fade"  data-bs-ride="carousel">
+
+       <!-- CarouselTop-------------------- Start -->
+         <section>
+         <div id="carouselExampleAutoplaying" class="carousel slide mt-3 z-1 shadow carousel-fade mt-6"  data-bs-ride="carousel">
           <div class="carousel-indicators carsoulIndicator">
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -285,7 +331,7 @@
           </div>
            <div class="carousel-inner">
            <div class="carousel-item active carousel1" data-bs-interval="3000">
-            <div class="carouselClass">
+            <div class="carouselClass1">
               <img src="dist/images/carousel/nioh1.jpg"  class="w-100 h-100 d-block carouselMain" alt="">
               <div class="carouselTextTop w-100 d-block">
                 <h3 class="mt-2 mx-2 text-white">NIOH<sup>©</sup> 1</h3>
@@ -306,7 +352,7 @@
            </div>
 
           <div class="carousel-item carousel2">
-            <div class="carouselClass" data-bs-interval="3000">
+            <div class="carouselClass1" data-bs-interval="3000">
               <img src="dist/images/carousel/nioh21.jpg" class="w-100 h-100 d-block carouselMain shadow-lg" alt="">
               <div class="carouselTextTop w-100 d-block">
                <h3 class="mt-2 mx-2 text-white">NIOH<sup>©</sup> 2</h3>
@@ -326,7 +372,7 @@
           </div>
           </div>
           <div class="carousel-item carousel3">
-          <div class="carouselClass" data-bs-interval="3000">
+          <div class="carouselClass1" data-bs-interval="3000">
             <img src="dist/images/carousel/ghost1.jpg" class="w-100 h-100 d-block carouselMain shadow-lg" alt="">
             <div class="carouselTextTop w-100 d-block">
              <h3 class="mt-2 mx-2 text-white">GHOST OF TSUSHIMA<sup>©</sup></h3>
@@ -348,19 +394,19 @@
            </div>
          </div>
 
-       <!-- Carousel Button-------------------- Start -->
+       <!-- Carousel Button 1-------------------- Start -->
         <div class="carouselButtons">
-        <button class="carousel-control-prev prevBtnCarsoul" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev prevBtnCarsoul1" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next nextBtnCarsoul" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next nextBtnCarsoul1" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
            <span class="carousel-control-next-icon" aria-hidden="true"></span>
            <span class="visually-hidden">Next</span>
         </div>
 
 
-        <!-- INF Card Carousel-------------------- Start -->
+        <!-- INF Card Carousel 1-------------------- Start -->
 
         <div class="infCardCrousel position-absolute z-3 shadow-lg" id="infCardCrousel1">
           <div class="d-flex flex-column p-3">
@@ -489,8 +535,97 @@
           <img src="dist/images/adv/advtop.png" class="mx-2 mt-3" alt="">
         </div>
 
+        </section>
 
-        </div>
+
+
+        
+       <!-- CarouselMiddle-------------------- Start -->
+       <section class="carouselMiddle">
+        <div id="carouselExampleIndicators" class="carousel slide mt-3 z-1  mt-6 mb-5" >
+          <div class="carousel-indicators carsoulIndicator2">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+          <div class="carousel-item active carouselMiddleJs1">
+            <div class="carouselMiddleClass1">
+            <div class="carMiddle1-1">
+              <img src="dist/images/carousel/middle1.jpg" alt="">
+            </div>
+            <div class="carMiddle1-2">
+              <img src="dist/images/carousel/middle2.jpg" alt="">
+            </div>
+            <div class="carMiddle1-3">
+              <img src="dist/images/carousel/middle3.jpg" alt="">
+            </div>
+            <div class="carMiddle1-4">
+              <img src="dist/images/carousel/middle4.jpg" alt="">
+            </div>
+           </div>
+           </div>
+
+
+           <div class="carousel-item  carouselMiddleJs1">
+            <div class="carouselMiddleClass1">
+            <div class="carMiddle1-1">
+              <img src="dist/images/carousel/middle5.jpg" alt="">
+            </div>
+            <div class="carMiddle1-2">
+              <img src="dist/images/carousel/middle6.jpg" alt="">
+            </div>
+            <div class="carMiddle1-3">
+              <img src="dist/images/carousel/middle7.jpg" alt="">
+            </div>
+            <div class="carMiddle1-4">
+              <img src="dist/images/carousel/middle8.jpg" alt="">
+            </div>
+           </div>
+           </div>
+
+          </div>
+
+
+          </div>
+
+          <div class="carouselButtons">
+            <button class="carousel-control-prev prevBtnCarsoul2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next nextBtnCarsoul2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+            </div>
+
+
+            <div class="swiper mySwiper2 d-none mt-4">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide d-flex flex-column">
+                  <img src="dist/images/carousel/middle1.jpg" alt="">
+                </div>
+                <div class="swiper-slide d-flex flex-column">
+                  <img src="dist/images/carousel/middle2.jpg" alt="">
+
+                </div>
+                <div class="swiper-slide d-flex flex-column">
+                  <img src="dist/images/carousel/middle5.jpg" alt="">
+                </div>
+                <div class="swiper-slide d-flex flex-column">
+                  <img src="dist/images/carousel/middle6.jpg" alt="">
+                </div>
+                <div class="swiper-slide d-flex flex-column">
+                  <img src="dist/images/carousel/middle7.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+            </div>
+
+
+       </section>
+        
+      </div>
 
      
       <div class="emptyBar"></div>

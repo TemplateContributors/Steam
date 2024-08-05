@@ -25,11 +25,11 @@ body {
   background-color: rgb(23, 29, 37);
 }
 .upHeader button {
-  background-color: green;
+  background-color: #5C7E10;
   font-size: 0.8rem;
 }
 .upHeader button:hover {
-  background-color: greenyellow;
+  background-color: #6C9018;
 }
 
 .headerNavbarRespansive {
@@ -182,6 +182,42 @@ body {
 .sideBar {
   height: 100vh;
   width: 30rem;
+  margin-top: 5rem;
+  text-align: left;
+  font-family: motiva;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.sideBar img {
+  flex-shrink: 0;
+}
+.sideBar > div {
+  margin-left: 250px;
+  flex-shrink: 0;
+}
+.sideBar div:nth-child(2) {
+  background-image: linear-gradient(90deg, #263F54 0%, #1C293A 100%);
+  width: 170px;
+  height: 70px;
+}
+.sideBar .sidebarType1 {
+  color: #88bde9;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.sideBar .sidebarType1:hover {
+  color: #FFFFFF;
+}
+.sideBar .sidebarType2 {
+  color: #536f86;
+}
+.sideBar .sidebarType3 {
+  color: #7a8b9d;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.sideBar .sidebarType3:hover {
+  color: #61BEF4;
 }
 
 .emptyBar {
@@ -393,91 +429,92 @@ body {
 .middlePage .middleNavBar .input-group > input:hover {
   border-color: #307fbf;
 }
-.middlePage .carouselClass {
+.middlePage .carouselClass1 {
   display: grid !important;
   width: 100% !important;
-  height: 460px !important;
+  height: 400px !important;
   background-color: #0b151e;
-  grid-template-areas: "main main main main texttop texttop" "main main main main sq1 sq2" "main main main main sq3 sq4" "main main main main textbottom textbottom ";
-  gap: 5px;
+  grid-template-columns: 65% 16% 16%;
+  grid-template-rows: 80px 80px 80px 160px;
+  gap: 10px;
 }
-.middlePage .carouselClass .carouselMain {
-  grid-area: main;
+.middlePage .carouselClass1 .carouselMain {
+  grid-area: 1/1/5/2;
   box-shadow: 10px 10px 2px;
 }
-.middlePage .carouselClass .carouselTextTop {
-  grid-area: texttop;
+.middlePage .carouselClass1 .carouselTextTop {
+  grid-area: 1/2/2/4;
 }
-.middlePage .carouselClass .carouselSq1 {
-  grid-area: sq1;
+.middlePage .carouselClass1 .carouselSq1 {
+  grid-area: 2/2/3/3;
   opacity: 0.6;
 }
-.middlePage .carouselClass .carouselSq1:hover {
+.middlePage .carouselClass1 .carouselSq1:hover {
   opacity: 1;
 }
-.middlePage .carouselClass .carouselSq2 {
-  grid-area: sq2;
+.middlePage .carouselClass1 .carouselSq2 {
+  grid-area: 2/3/3/4;
   opacity: 0.6;
 }
-.middlePage .carouselClass .carouselSq2:hover {
+.middlePage .carouselClass1 .carouselSq2:hover {
   opacity: 1;
 }
-.middlePage .carouselClass .carouselSq3 {
-  grid-area: sq3;
+.middlePage .carouselClass1 .carouselSq3 {
+  grid-area: 3/2/4/3;
   opacity: 0.6;
 }
-.middlePage .carouselClass .carouselSq3:hover {
+.middlePage .carouselClass1 .carouselSq3:hover {
   opacity: 1;
 }
-.middlePage .carouselClass .carouselSq4 {
-  grid-area: sq4;
+.middlePage .carouselClass1 .carouselSq4 {
+  grid-area: 3/3/4/4;
   opacity: 0.6;
 }
-.middlePage .carouselClass .carouselSq4:hover {
+.middlePage .carouselClass1 .carouselSq4:hover {
   opacity: 1;
 }
-.middlePage .carouselClass .carouselTextBottom {
-  grid-area: textbottom;
+.middlePage .carouselClass1 .carouselTextBottom {
+  grid-area: 4/2/5/4;
 }
-.middlePage .carouselClass .topSeller {
+.middlePage .carouselClass1 .topSeller {
   font-size: 0.7rem;
   padding: 2pt;
 }
-.middlePage .carouselClass .offPrice {
+.middlePage .carouselClass1 .offPrice {
   background-color: #4C6B22;
   color: #BEEE11;
   padding: 0.5pt;
 }
-.middlePage .carouselClass sup {
+.middlePage .carouselClass1 sup {
   font-size: 1rem;
 }
-.middlePage .prevBtnCarsoul {
+.middlePage .prevBtnCarsoul1 {
   position: absolute !important;
-  top: 180pt !important;
+  top: 220pt !important;
   left: -30pt !important;
   background-color: BLUE;
   height: 80pt;
   width: 30pt;
   background-image: linear-gradient(to right, #141e2a, #212f41);
 }
-.middlePage .prevBtnCarsoul:hover {
+.middlePage .prevBtnCarsoul1:hover {
   background-image: linear-gradient(to right, #465d71, #0f1720);
 }
-.middlePage .nextBtnCarsoul {
+.middlePage .nextBtnCarsoul1 {
   position: absolute !important;
-  top: 180pt !important;
+  top: 220pt !important;
   right: -30pt !important;
   background-color: BLUE;
   height: 80pt;
   width: 30pt;
   background-image: linear-gradient(to right, #141e2a, #212f41);
 }
-.middlePage .nextBtnCarsoul:hover {
+.middlePage .nextBtnCarsoul1:hover {
   background-image: linear-gradient(to right, #465d71, #0f1720);
 }
 .middlePage .carsoulIndicator {
   position: absolute !important;
-  top: 350pt !important;
+  top: 300pt !important;
 }
 .middlePage .carsoulIndicator button {
   width: 12pt;
@@ -540,6 +577,72 @@ body {
   box-shadow: 0px 0px 10px 2px rgb(87, 173, 212);
 }
 
+.carouselMiddle {
+  position: relative;
+}
+.carouselMiddle .carouselMiddleClass1 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 20rem 20rem 20rem;
+  grid-template-rows: 225px 225px;
+}
+.carouselMiddle .carouselMiddleClass1 img {
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100%;
+}
+.carouselMiddle .carouselMiddleClass1 .carMiddle1-1 {
+  grid-area: 1/1/3/2;
+  background-color: green;
+  overflow: hidden;
+}
+.carouselMiddle .carouselMiddleClass1 .carMiddle1-2 {
+  grid-area: 1/2/3/3;
+  background-color: red;
+}
+.carouselMiddle .carouselMiddleClass1 .carMiddle1-3 {
+  grid-area: 1/3/2/4;
+  background-color: green;
+}
+.carouselMiddle .carouselMiddleClass1 .carMiddle1-4 {
+  grid-area: 2/3/3/4;
+  background-color: red;
+}
+.carouselMiddle .carsoulIndicator2 {
+  position: absolute !important;
+  top: 470px !important;
+}
+.carouselMiddle .carsoulIndicator2 button {
+  width: 12pt;
+  height: 6pt;
+  border-radius: 4pt;
+}
+.carouselMiddle .prevBtnCarsoul2 {
+  position: absolute !important;
+  top: 280px !important;
+  left: -30pt !important;
+  background-color: BLUE;
+  height: 80pt;
+  width: 30pt;
+  background-image: linear-gradient(to right, #141e2a, #212f41);
+}
+.carouselMiddle .prevBtnCarsoul2:hover {
+  background-image: linear-gradient(to right, #465d71, #0f1720);
+}
+.carouselMiddle .nextBtnCarsoul2 {
+  position: absolute !important;
+  top: 280px !important;
+  right: -30pt !important;
+  background-color: BLUE;
+  height: 80pt;
+  width: 30pt;
+  background-image: linear-gradient(to right, #141e2a, #212f41);
+}
+.carouselMiddle .nextBtnCarsoul2:hover {
+  background-image: linear-gradient(to right, #465d71, #0f1720);
+}
+
 @media only screen and (max-width: 992px) {
   .upHeader {
     display: none;
@@ -576,6 +679,9 @@ body {
   .swiper {
     display: block !important;
   }
+  .sideBar {
+    display: none !important;
+  }
 }
 @media only screen and (max-width: 1620px) {
   .infCardCrousel {
@@ -584,7 +690,7 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .sideBar {
-    flex-shrink: 2;
+    flex-shrink: 2 !important;
   }
 }
 @keyframes headermenu {

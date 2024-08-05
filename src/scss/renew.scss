@@ -9,10 +9,10 @@ body {
 .upHeader {
     background-color: $header-color;
     button {
-        background-color: green;
+        background-color: #5C7E10;
         font-size: 0.8rem;
         &:hover {
-            background-color: greenyellow;
+            background-color: #6C9018;
         }
     }
 }
@@ -167,6 +167,44 @@ body {
     // background-color: blue;
     height: 100vh;
     width: 30rem;
+    margin-top: 5rem;
+    text-align: left;
+    font-family: motiva;
+    font-weight: bold;
+    transition: all 0.5s;
+    img{
+        flex-shrink: 0;
+    }
+    >div{
+        margin-left: 250px;
+        flex-shrink: 0;
+    }
+    div:nth-child(2){
+        background-image: linear-gradient(90deg,#263F54 0%,#1C293A 100%);
+        // padding: 15px;
+        width: 170px;
+        height: 70px;
+    }
+    .sidebarType1{
+        color: #88bde9;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover{
+            color: #FFFFFF;
+        }
+    }
+    .sidebarType2{
+        color: #536f86;
+        
+    }
+    .sidebarType3{
+        color: #7a8b9d;
+        font-size: 0.8rem;
+        cursor: pointer;
+        &:hover{
+            color: #61BEF4;
+        }
+    }
 }
 .emptyBar {
     // background-color: blue;
@@ -390,55 +428,57 @@ body {
             }
         }
     }
-    .carouselClass {
+    .carouselClass1 {
         display: grid !important;
         width: 100% !important;
-        height: 460px !important;
+        height: 400px !important;
         background-color: #0b151e;
-        grid-template-areas:
-            "main main main main texttop texttop"
-            "main main main main sq1 sq2"
-            "main main main main sq3 sq4"
-            "main main main main textbottom textbottom ";
-        gap: 5px;
+        // grid-template-areas:
+        //     "main main main main texttop texttop"
+        //     "main main main main sq1 sq2"
+        //     "main main main main sq3 sq4"
+        //     "main main main main textbottom textbottom ";
+        grid-template-columns: 65% 16% 16%;
+        grid-template-rows: 80px 80px 80px 160px ;
+        gap: 10px;
 
         .carouselMain {
-            grid-area: main;
+            grid-area:1/1/5/2 ;
             box-shadow: 10px 10px 2px;
         }
         .carouselTextTop {
-            grid-area: texttop;
+            grid-area:1/2/2/4 ;
         }
         .carouselSq1 {
-            grid-area: sq1;
+            grid-area:2/2/3/3 ;
             opacity: 0.6;
             &:hover {
                 opacity: 1;
             }
         }
         .carouselSq2 {
-            grid-area: sq2;
+            grid-area:2/3/3/4 ;
             opacity: 0.6;
             &:hover {
                 opacity: 1;
             }
         }
         .carouselSq3 {
-            grid-area: sq3;
+            grid-area:3/2/4/3 ;
             opacity: 0.6;
             &:hover {
                 opacity: 1;
             }
         }
         .carouselSq4 {
-            grid-area: sq4;
+            grid-area:3/3/4/4 ;
             opacity: 0.6;
             &:hover {
                 opacity: 1;
             }
         }
         .carouselTextBottom {
-            grid-area: textbottom;
+            grid-area:4/2/5/4 ;
         }
         .topSeller {
             font-size: 0.7rem;
@@ -453,9 +493,9 @@ body {
             font-size: 1rem;
         }
     }
-    .prevBtnCarsoul {
+    .prevBtnCarsoul1 {
         position: absolute !important;
-        top: 180pt !important;
+        top: 220pt !important;
         left: -30pt !important;
         background-color: BLUE;
         height: 80pt;
@@ -465,9 +505,9 @@ body {
             background-image: linear-gradient(to right, #465d71, #0f1720);
         }
     }
-    .nextBtnCarsoul {
+    .nextBtnCarsoul1 {
         position: absolute !important;
-        top: 180pt !important;
+        top: 220pt !important;
         right: -30pt !important;
         background-color: BLUE;
         height: 80pt;
@@ -479,7 +519,7 @@ body {
     }
     .carsoulIndicator {
         position: absolute !important;
-        top: 350pt !important;
+        top: 300pt !important;
         button {
             width: 12pt;
             height: 6pt;
@@ -544,6 +584,73 @@ body {
     img {
         &:hover {
             box-shadow: 0px 0px 10px 2px rgb(87, 173, 212);
+        }
+    }
+}
+.carouselMiddle{
+    position: relative;
+    .carouselMiddleClass1{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 20rem 20rem 20rem;
+        grid-template-rows: 225px 225px;
+        img{
+            max-width:100%;
+            min-height: 100%;
+            min-width: 100%;
+            max-height: 100%;
+        }
+        .carMiddle1-1{
+            grid-area: 1/1/3/2;
+            background-color: green;
+            overflow:hidden;
+
+        }
+        .carMiddle1-2{
+            grid-area: 1/2/3/3;
+            background-color: red;
+        }
+        .carMiddle1-3{
+            grid-area: 1/3/2/4;
+            background-color: green;
+    
+        }
+        .carMiddle1-4{
+            grid-area: 2/3/3/4;
+            background-color: red;
+        }
+    }
+    .carsoulIndicator2 {
+        position: absolute !important;
+        top: 470px !important;
+        button {
+            width: 12pt;
+            height: 6pt;
+            border-radius: 4pt;
+        }
+    }
+    .prevBtnCarsoul2 {
+        position: absolute !important;
+        top: 280px !important;
+        left: -30pt !important;
+        background-color: BLUE;
+        height: 80pt;
+        width: 30pt;
+        background-image: linear-gradient(to right, #141e2a, #212f41);
+        &:hover {
+            background-image: linear-gradient(to right, #465d71, #0f1720);
+        }
+    }
+    .nextBtnCarsoul2 {
+        position: absolute !important;
+        top: 280px !important;
+        right: -30pt !important;
+        background-color: BLUE;
+        height: 80pt;
+        width: 30pt;
+        background-image: linear-gradient(to right, #141e2a, #212f41);
+        &:hover {
+            background-image: linear-gradient(to right, #465d71, #0f1720);
         }
     }
 }
